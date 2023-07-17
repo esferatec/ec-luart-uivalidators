@@ -29,6 +29,8 @@ function BaseValidator:constructor(parent, widget, caption, x, y, width, height)
   self.rules = {}
   self.showallerrors = true
   self.separator = uivalidators.SEPARATOR.space
+
+  self:autosize()
 end
 
 -- Adds a new validation rule and message.
@@ -100,11 +102,6 @@ function ValidationLabel:constructor(parent, widget, caption, x, y, width, heigh
   self.savetooltip = self.tooltip
   self.savebgcolor = self.bgcolor
   self.savefgcolor = self.fgcolor
-
-  -- überprüfen!
-  if not width and not height then
-    self:autosize()
-  end
 end
 
 -- Performs validation on the associated input object.
@@ -145,11 +142,6 @@ function ValidationText:constructor(parent, widget, x, y, width, height)
   -- save initial values
   self.savebgcolor = self.bgcolor
   self.savefgcolor = self.fgcolor
-
-  -- überprüfen
-  if not width and not height then
-    self:autosize()
-  end
 end
 
 -- Performs validation on the associated input object.
@@ -189,11 +181,6 @@ function ValidationIndicator:constructor(parent, widget, x, y, width, height)
   -- save initial values
   self.savebgcolor = self.bgcolor
   self.savefgcolor = self.fgcolor
-
-  -- überprüfen
-  if not width and not height then
-    self:autosize()
-  end
 end
 
 -- Performs validation on the associated input object.
