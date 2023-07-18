@@ -230,10 +230,10 @@ end
 
 -- Adds a new validation object.
 function ValidationSummary:add(widget)
-  local isvalidwiget = { ["ValidationLabel"] = true, ["ValidationIndicator"] = true, ["ValidationText"] = true }
+  local isvalidwidget = { ["ValidationLabel"] = true, ["ValidationIndicator"] = true, ["ValidationText"] = true }
 
   -- validates parameter types
-  assert(isvalidwiget[type(widget)], "Parameter type must be a ValidationLabel, ValidationIndicator or ValidationText.")
+  assert(isvalidwidget[type(widget)], "Parameter type must be a ValidationLabel, ValidationIndicator or ValidationText.")
 
   table.insert(self.widgets, widget)
 end
