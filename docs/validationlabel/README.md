@@ -123,7 +123,7 @@ ValidationLabel.message (string)
 Adds a new validation rule and message.
 
 ```Lua
-ValidateionLabel:add(rule, message)
+ValidationLabel:add(rule, message)
 ```
 
 Parameter | Type | Description

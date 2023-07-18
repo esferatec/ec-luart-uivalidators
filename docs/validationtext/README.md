@@ -101,7 +101,7 @@ ValidationText.message (string)
 Adds a new validation rule and message.
 
 ```Lua
-ValidateionLabel:add(rule, message)
+ValidationText:add(rule, message)
 ```
 
 Parameter | Type | Description
