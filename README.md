@@ -23,7 +23,7 @@ The module provides the following validation objects:
 | ValidationIndicator | Represents a text label for an input object and provides data validation support. A flag in the label shows unsuccessful validation. The error message is displayed in the tooltip. | uivalidators.lua
 | ValidationSummary | Displays a summary of all validation errors in a text label. The ValidationSummary works with all of the validation objects together. | uivalidators.lua
 
-More detailed descriptions and usage examples for each of these validation objects can be found in the docs folder.
+More detailed descriptions and usage examples can be found in the docs folder.
 
 ## Installation
 
@@ -43,7 +43,7 @@ More detailed descriptions and usage examples for each of these validation objec
 
 ## Usage
 
-The validator objects can be loaded using the function *require()*:
+The validation objects can be loaded using the function *require()*:
 
 ```lua
 local va = require("eclua.uivalidators") 
