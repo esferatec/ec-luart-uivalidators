@@ -119,6 +119,8 @@ function ValidationLabel:validate()
     self.bgcolor = self.savebgcolor
     self.fgcolor = self.savefgcolor
   end
+
+  return self.isvalid
 end
 
 -- Initializes a new validation label instance.
@@ -157,6 +159,8 @@ function ValidationText:validate()
     self.bgcolor = self.savebgcolor
     self.fgcolor = self.savefgcolor
   end
+
+  return self.isvalid
 end
 
 -- Initializes a new validation text instance.
@@ -198,6 +202,8 @@ function ValidationIndicator:validate()
     self.bgcolor = self.savebgcolor
     self.fgcolor = self.savefgcolor
   end
+
+  return self.isvalid
 end
 
 -- Initializes a new validation indicator instance.
