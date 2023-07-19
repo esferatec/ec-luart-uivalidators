@@ -18,8 +18,10 @@ uivalidators.FLAG.questionmark = "(?)"
 
 --#region basevalidator
 
+-- Defines the base validator prototype.
 local BaseValidator = Object(ui.Label)
 
+-- Overrites the default label constructor.
 function BaseValidator:constructor(parent, widget, caption, x, y, width, height)
   super(self).constructor(self, parent, caption, x, y, width, height)
   self.widget = widget
