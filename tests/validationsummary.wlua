@@ -21,11 +21,9 @@ local valSummary = va.ValidationSummary(win, 10, 140, 280, 90)
 valName:add(isrequired, "Name is required.")
 valAge:add(isrequired, "Age is required.")
 valAge:add(isnumber, "Age must be a number.")
-valAge.showallerrors = false
 
 valSummary:add(valName)
 valSummary:add(valAge)
-valSummary.separator = " / "
 
 function btnValidate:onClick()
   valSummary:validate()
