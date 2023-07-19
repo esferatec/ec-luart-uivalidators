@@ -94,7 +94,7 @@ ValidationIndicator.errorfgcolor (number)
 
 ![validationindicator](/docs/validationindicator/validationindicator06.png)
 
-## Property - isvalid
+## Property - ISVALID
 
 Gets a value indicating whether validation succeeded.
 
@@ -102,7 +102,7 @@ Gets a value indicating whether validation succeeded.
 ValidationIndicator.isvalid (boolean)
 ```
 
-## Property - count
+## Property - COUNT
 
 Gets the amount of errors.
 
@@ -110,7 +110,7 @@ Gets the amount of errors.
 ValidationIndicator.count (number)
 ```
 
-## Property - message
+## Property - MESSAGE
 
 Gets the error message.
 

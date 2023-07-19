@@ -72,7 +72,7 @@ ValidationText.errorfgcolor (number)
 
 ![validationtext](/docs/validationtext/validationtext06.png)
 
-## Property - isvalid
+## Property - ISVALID
 
 Gets a value indicating whether validation succeeded.
 
@@ -80,7 +80,7 @@ Gets a value indicating whether validation succeeded.
 ValidationText.isvalid (boolean)
 ```
 
-## Property - count
+## Property - COUNT
 
 Gets the amount of errors.
 
@@ -88,7 +88,7 @@ Gets the amount of errors.
 ValidationText.count (number)
 ```
 
-## Property - message
+## Property - MESSAGE
 
 Gets the error message.
 

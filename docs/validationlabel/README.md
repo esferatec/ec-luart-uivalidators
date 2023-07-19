@@ -94,7 +94,7 @@ ValidationLabel.errorfgcolor (number)
 
 ![validationlabel](/docs/validationlabel/validationlabel06.png)
 
-## Property - isvalid
+## Property - ISVALID
 
 Gets a value indicating whether validation succeeded.
 
@@ -102,7 +102,7 @@ Gets a value indicating whether validation succeeded.
 ValidationLabel.isvalid (boolean)
 ```
 
-## Property - count
+## Property - COUNT
 
 Gets the amount of errors.
 
@@ -110,7 +110,7 @@ Gets the amount of errors.
 ValidationLabel.count (number)
 ```
 
-## Property - message
+## Property - MESSAGE
 
 Gets the error message.
 

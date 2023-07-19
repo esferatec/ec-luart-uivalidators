@@ -37,7 +37,7 @@ space | " "
 semicolon | "; "
 comma | ", "
 
-## Property - isvalid
+## Property - ISVALID
 
 Gets a value indicating whether all  validation succeeded.
 
@@ -45,7 +45,7 @@ Gets a value indicating whether all  validation succeeded.
 ValidationSummary.isvalid (boolean)
 ```
 
-## Property - count
+## Property - COUNT
 
 Gets the amount of all errors.
 
@@ -53,7 +53,7 @@ Gets the amount of all errors.
 ValidationSummary.count (number)
 ```
 
-## Property - message
+## Property - MESSAGE
 
 Gets all error message.
 
@@ -92,7 +92,43 @@ ValidationSummary:update()
 ## Example
 
 ```Lua
+local ui = require("ui")
+local va = require("ecluart.uivalidators")
 
+local function isrequired(value)
+  return string.len(value) > 0
+end
+
+local function isnumber(value)
+  return math.type(math.tointeger(value)) == "integer"
+end
+
+local win = ui.Window("ValidationSummary", "fixed", 300, 250)
+
+local etyName = ui.Entry(win, "", 100, 24, 110)
+local valName = va.ValidationLabel(win, etyName, "Name:", 10, 29)
+local etyAge = ui.Entry(win, "", 100, 54, 40)
+local valAge = va.ValidationLabel(win, etyAge, "Age:", 10, 59)
+local btnValidate = ui.Button(win, "Validate", 10, 100, 280)
+local valSummary = va.ValidationSummary(win, 10, 140, 280, 90)
+
+valName:add(isrequired, "Name is required.")
+valAge:add(isrequired, "Age is required.")
+valAge:add(isnumber, "Age must be a number.")
+
+valSummary:add(valName)
+valSummary:add(valAge)
+
+function btnValidate:onClick()
+  valSummary:validate()
+  valSummary:update()
+end
+
+win:show()
+
+repeat
+    ui.update()
+until not win.visible
 ```
 
 ![validationsummary](/docs/validationsummary/validationsummary01.png)
