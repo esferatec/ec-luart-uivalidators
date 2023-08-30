@@ -27,7 +27,7 @@ widget | object | Sets the input object to validate.
 Shows either all error messages or only the last one.
 
 ```Lua
-ValidationLabel.showallerrors (boolean)
+ValidationLabel.showallerrors(boolean)
 ```
 
 ![validationlabel](/docs/validationlabel/validationlabel02.png)
@@ -38,7 +38,7 @@ ValidationLabel.showallerrors (boolean)
 Specifies the text between two or more error messages. The default separator is: SEPARATOR.space
 
 ```Lua
-ValidationLabel.separator (string)
+ValidationLabel.separator(string)
 ```
 
 ![validationlabel](/docs/validationlabel/validationlabel05.png)
@@ -61,7 +61,7 @@ Newline does not work with tooltip.
 Defines the indicator when validation is unsuccessful. The default indicator is: FLAG.exclamationmark.
 
 ```Lua
-ValidationLabel.flag (string)
+ValidationLabel.flag(string)
 ```
 
 ![validationlabel](/docs/validationlabel/validationlabel04.png)
@@ -79,7 +79,7 @@ questionmark | "(?)"
 Defines the background color when validation is unsuccessful.
 
 ```Lua
-ValidationLabel.errorbgcolor (number)
+ValidationLabel.errorbgcolor(number)
 ```
 
 ![validationlabel](/docs/validationlabel/validationlabel06.png)
@@ -89,7 +89,7 @@ ValidationLabel.errorbgcolor (number)
 Defines the foreground color when validation is unsuccessful.
 
 ```Lua
-ValidationLabel.errorfgcolor (number)
+ValidationLabel.errorfgcolor(number)
 ```
 
 ![validationlabel](/docs/validationlabel/validationlabel06.png)
@@ -99,7 +99,7 @@ ValidationLabel.errorfgcolor (number)
 Gets a value indicating whether validation succeeded.
 
 ```Lua
-ValidationLabel.isvalid (boolean)
+ValidationLabel.isvalid(boolean)
 ```
 
 ## Property - COUNT
@@ -107,7 +107,7 @@ ValidationLabel.isvalid (boolean)
 Gets the amount of errors.
 
 ```Lua
-ValidationLabel.count (number)
+ValidationLabel.count(number)
 ```
 
 ## Property - MESSAGE
@@ -115,7 +115,7 @@ ValidationLabel.count (number)
 Gets the error message.
 
 ```Lua
-ValidationLabel.message (string)
+ValidationLabel.message(string)
 ```
 
 ## Method - ADD

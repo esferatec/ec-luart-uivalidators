@@ -26,7 +26,7 @@ widget | object | Sets the input object to validate.
 Shows either all error messages or only the last one.
 
 ```Lua
-ValidationText.showallerrors (boolean)
+ValidationText.showallerrors(boolean)
 ```
 
 ![validationtext](/docs/validationtext/validationtext02.png)
@@ -37,7 +37,7 @@ ValidationText.showallerrors (boolean)
 Specifies the text between two or more error messages. The default separator is: SEPARATOR.space
 
 ```Lua
-ValidationText.separator (string)
+ValidationText.separator(string)
 ```
 
 ![validationtext](/docs/validationtext/validationtext05.png)
@@ -57,7 +57,7 @@ comma | ", "
 Defines the background color when validation is unsuccessful.
 
 ```Lua
-ValidationText.errorbgcolor (number)
+ValidationText.errorbgcolor(number)
 ```
 
 ![validationtext](/docs/validationtext/validationtext06.png)
@@ -67,7 +67,7 @@ ValidationText.errorbgcolor (number)
 Defines the foreground color when validation is unsuccessful.
 
 ```Lua
-ValidationText.errorfgcolor (number)
+ValidationText.errorfgcolor(number)
 ```
 
 ![validationtext](/docs/validationtext/validationtext06.png)
@@ -77,7 +77,7 @@ ValidationText.errorfgcolor (number)
 Gets a value indicating whether validation succeeded.
 
 ```Lua
-ValidationText.isvalid (boolean)
+ValidationText.isvalid(boolean)
 ```
 
 ## Property - COUNT
@@ -85,7 +85,7 @@ ValidationText.isvalid (boolean)
 Gets the amount of errors.
 
 ```Lua
-ValidationText.count (number)
+ValidationText.count(number)
 ```
 
 ## Property - MESSAGE
@@ -93,7 +93,7 @@ ValidationText.count (number)
 Gets the error message.
 
 ```Lua
-ValidationText.message (string)
+ValidationText.message(string)
 ```
 
 ## Method - ADD

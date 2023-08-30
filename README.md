@@ -46,7 +46,7 @@ More detailed descriptions and usage examples can be found in the docs folder.
 The validation objects can be loaded using the function *require()*:
 
 ```lua
-local va = require("eclua.uivalidators") 
+local va = require("ecluart.uivalidators") 
 ```
 
 ## License

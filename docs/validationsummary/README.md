@@ -22,7 +22,7 @@ ValidationSummary(parent, [x], [y], [width], [height])
 Specifies the text between two or more error messages. The default separator is: SEPARATOR.newline
 
 ```Lua
-ValidationSummary.separator (string)
+ValidationSummary.separator(string)
 ```
 
 ![validationsummary](/docs/validationsummary/validationsummary02.png)
@@ -42,7 +42,7 @@ comma | ", "
 Gets a value indicating whether all  validation succeeded.
 
 ```Lua
-ValidationSummary.isvalid (boolean)
+ValidationSummary.isvalid(boolean)
 ```
 
 ## Property - COUNT
@@ -50,7 +50,7 @@ ValidationSummary.isvalid (boolean)
 Gets the amount of all errors.
 
 ```Lua
-ValidationSummary.count (number)
+ValidationSummary.count(number)
 ```
 
 ## Property - MESSAGE
@@ -58,7 +58,7 @@ ValidationSummary.count (number)
 Gets all error message.
 
 ```Lua
-ValidationSummary.message (string)
+ValidationSummary.message(string)
 ```
 
 ## Method - ADD
