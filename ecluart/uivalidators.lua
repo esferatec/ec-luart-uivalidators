@@ -4,17 +4,19 @@ local ui = require("ui")
 local uivalidators = {}
 
 -- Defines specific constants.
-uivalidators.SEPARATOR = {}
-uivalidators.SEPARATOR.none = ""
-uivalidators.SEPARATOR.newline = "\n"
-uivalidators.SEPARATOR.space = " "
-uivalidators.SEPARATOR.semicolon = "; "
-uivalidators.SEPARATOR.comma = ", "
+uivalidators.SEPARATOR = {
+  none = "",
+  newline = "\n",
+  space = " ",
+  semicolon = "; ",
+  comma = ", "
+}
 
-uivalidators.FLAG = {}
-uivalidators.FLAG.none = ""
-uivalidators.FLAG.exclamationmark = "(!)"
-uivalidators.FLAG.questionmark = "(?)"
+uivalidators.FLAG = {
+  none = "",
+  exclamationmark = "(!)",
+  questionmark = "(?)"
+}
 
 --#region basevalidator
 
