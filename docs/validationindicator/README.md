@@ -143,7 +143,7 @@ ValidationIndicator:validate()
 
 ```Lua
 local ui = require("ui")
-local va = require("ecluart.uivalidators")
+local uiva = require("ecluart.uivalidators")
 
 local function isrequired(value)
   return string.len(value) > 0
@@ -157,7 +157,7 @@ local win = ui.Window("ValidationIndicator", "fixed", 300, 250)
 
 local lblAge = ui.Label(win, "Age:", 10, 29)
 local etyAge = ui.Entry(win, "", 45, 24, 40)
-local valAge = va.ValidationIndicator(win, etyAge, 90, 29)
+local valAge = uiva.ValidationIndicator(win, etyAge, 90, 29)
 local btnValidate = ui.Button(win, "Validate", 10, 100, 300)
 
 valAge:add(isrequired, "Age is required.")

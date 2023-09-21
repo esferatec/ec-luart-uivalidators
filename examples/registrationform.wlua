@@ -1,5 +1,5 @@
 local ui = require("ui")
-local va = require("ecluart.uivalidators")
+local uiva = require("ecluart.uivalidators")
 
 --#region validation functions
 local function isrequired(value)
@@ -28,15 +28,15 @@ local etyAge = ui.Entry(win, "", 100, 84, 40)
 local etyEmail = ui.Entry(win, "", 100, 116, 180)
 local cbbCountry = ui.Combobox(win, { "Item 1", "Item 2", "Item 3" }, 100, 148, 80)
 
-local valName = va.ValidationLabel(win, etyName, "Name:", 10, 25, 90)
-local valPassword = va.ValidationLabel(win, etyPassword, "Password:", 10, 57)
-local valAge = va.ValidationLabel(win, etyAge, "Age:", 10, 89)
-local valEmail = va.ValidationLabel(win, etyEmail, "Email:", 10, 121)
-local valCountry = va.ValidationLabel(win, cbbCountry, "Country:", 10, 153)
+local valName = uiva.ValidationLabel(win, etyName, "Name:", 10, 25)
+local valPassword = uiva.ValidationLabel(win, etyPassword, "Password:", 10, 57)
+local valAge = uiva.ValidationLabel(win, etyAge, "Age:", 10, 89)
+local valEmail = uiva.ValidationLabel(win, etyEmail, "Email:", 10, 121)
+local valCountry = uiva.ValidationLabel(win, cbbCountry, "Country:", 10, 153)
 
 local btnValidate = ui.Button(win, "Validate", 10, 210, 380)
 
-local valSummary = va.ValidationSummary(win, 10, 250, 380, 50)
+local valSummary = uiva.ValidationSummary(win, 10, 250, 380, 50)
 --#endregion main window
 
 --adds validation rules and messages 

@@ -7,8 +7,8 @@ It has been designed to simplify and improve the creation of graphical user inte
 
 ![Screenshot of the Regisatrtion Form](/readme.png)
 
-[![Lua 5.4](https://badgen.net/badge/Lua/5.4/yellow)](https://github.com/lua/lua)
-[![LuaRT 5.4](https://badgen.net/badge/LuaRT/1.5.0/blue)](https://github.com/samyeyo/LuaRT)
+[![Lua 5.4.6](https://badgen.net/badge/Lua/5.4.6/yellow)](https://github.com/lua/lua)
+[![LuaRT 1.5.2](https://badgen.net/badge/LuaRT/1.5.2/blue)](https://github.com/samyeyo/LuaRT)
 [![LuaCheck 1.1.1](https://badgen.net/badge/LuaCheck/1.1.1/green)](https://github.com/lunarmodules/luacheck)
 
 ## Features
@@ -43,10 +43,10 @@ More detailed descriptions and usage examples can be found in the docs folder.
 
 ## Usage
 
-The validation objects can be loaded using the function *require()*:
+The validation module can be loaded using the function *require()*:
 
 ```lua
-local va = require("ecluart.uivalidators") 
+local uivalidators = require("ecluart.uivalidators") 
 ```
 
 ## License

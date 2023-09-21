@@ -1,5 +1,5 @@
 local ui = require("ui")
-local va = require("ecluart.uivalidators")
+local uiva = require("ecluart.uivalidators")
 
 local function isrequired(value)
   return string.len(value) > 0
@@ -12,7 +12,7 @@ end
 local win = ui.Window("ValidationLabel", "fixed", 300, 250)
 
 local etyAge = ui.Entry(win, "", 100, 24, 40)
-local valAge = va.ValidationLabel(win, etyAge, "Age:", 10, 29)
+local valAge = uiva.ValidationLabel(win, etyAge, "Age:", 10, 29)
 local btnValidate = ui.Button(win, "Validate", 10, 100, 280)
 
 valAge:add(isrequired, "Age is required.")
@@ -36,13 +36,13 @@ function btnValidate:onClick()
   if cbxSeparator.checked then
     valAge.separator = " / "
   else
-    valAge.separator = va.SEPARATOR.space
+    valAge.separator = uiva.SEPARATOR.space
   end
 
   if cbxFlag.checked then
     valAge.flag = "(ERROR)"
   else
-    valAge.flag = va.FLAG.exclamationmark
+    valAge.flag = uiva.FLAG.exclamationmark
   end
 
   if cbxBGColor.checked then
