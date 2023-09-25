@@ -3,9 +3,7 @@
 This project provides input validation ui objects for [LuaRT](https://www.luart.org/).
 It has been designed to simplify and improve the creation of graphical user interfaces with the LuaRT ui module.
 
-*In the "Registration Form" example below, the ValidationLabel and ValidationSummary are used to validate user input.*
-
-![Screenshot of the Regisatrtion Form](/readme.png)
+![example](/readme.png)
 
 [![Lua 5.4.6](https://badgen.net/badge/Lua/5.4.6/yellow)](https://github.com/lua/lua)
 [![LuaRT 1.5.2](https://badgen.net/badge/LuaRT/1.5.2/blue)](https://github.com/samyeyo/LuaRT)
@@ -13,7 +11,6 @@ It has been designed to simplify and improve the creation of graphical user inte
 
 ## Features
 
-All objects provide both functional and visual support for input validation.
 The module provides the following validation objects:
 
 | Name | Description | Module |
@@ -21,7 +18,6 @@ The module provides the following validation objects:
 | ValidationLabel | Represents a text label for an input object and provides data validation support. A flag next to the caption shows unsuccessful validation. The error message is displayed in the tooltip. | uivalidators.lua
 | ValidationText | Represents a text label for an input object and provides data validation support. The error message is displayed in the label. | uivalidators.lua
 | ValidationIndicator | Represents a text label for an input object and provides data validation support. A flag in the label shows unsuccessful validation. The error message is displayed in the tooltip. | uivalidators.lua
-| ValidationSummary | Displays a summary of all validation errors in a text label. The ValidationSummary works with all of the validation objects together. | uivalidators.lua
 
 More detailed descriptions and usage examples can be found in the docs folder.
 
