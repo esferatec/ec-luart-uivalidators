@@ -27,7 +27,7 @@ widget | object | Sets the input object to validate.
 Shows either all error messages or only the last one.
 
 ```Lua
-ValidationIndicator.showallerrors(boolean)
+ValidationIndicator.showallerrors (boolean)
 ```
 
 ![validationindicator](/docs/validationindicator/validationindicator02.png)
@@ -38,7 +38,7 @@ ValidationIndicator.showallerrors(boolean)
 Specifies the text between two or more error messages. The default separator is: SEPARATOR.space
 
 ```Lua
-ValidationIndicator.separator(string)
+ValidationIndicator.separator (string)
 ```
 
 ![validationindicator](/docs/validationindicator/validationindicator05.png)
@@ -61,7 +61,7 @@ Newline does not work with tooltip.
 Defines the indicator when validation is unsuccessful. The default indicator is: FLAG.exclamationmark.
 
 ```Lua
-ValidationIndicator.flag(string)
+ValidationIndicator.flag (string)
 ```
 
 ![validationindicator](/docs/validationindicator/validationindicator04.png)
@@ -79,7 +79,7 @@ questionmark | "(?)"
 Defines the background color when validation is unsuccessful.
 
 ```Lua
-ValidationIndicator.errorbgcolor(number)
+ValidationIndicator.errorbgcolor (number)
 ```
 
 ![validationindicator](/docs/validationindicator/validationindicator06.png)
@@ -89,7 +89,7 @@ ValidationIndicator.errorbgcolor(number)
 Defines the foreground color when validation is unsuccessful.
 
 ```Lua
-ValidationIndicator.errorfgcolor(number)
+ValidationIndicator.errorfgcolor (number)
 ```
 
 ![validationindicator](/docs/validationindicator/validationindicator06.png)
@@ -99,7 +99,7 @@ ValidationIndicator.errorfgcolor(number)
 Gets a value indicating whether validation succeeded.
 
 ```Lua
-ValidationIndicator.isvalid(boolean)
+ValidationIndicator.isvalid (boolean)
 ```
 
 ## Property - COUNT
@@ -107,7 +107,7 @@ ValidationIndicator.isvalid(boolean)
 Gets the amount of errors.
 
 ```Lua
-ValidationIndicator.count(number)
+ValidationIndicator.count (number)
 ```
 
 ## Property - MESSAGE

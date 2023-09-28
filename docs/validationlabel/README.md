@@ -79,7 +79,7 @@ questionmark | "(?)"
 Defines the background color when validation is unsuccessful.
 
 ```Lua
-ValidationLabel.errorbgcolor(number)
+ValidationLabel.errorbgcolor (number)
 ```
 
 ![validationlabel](/docs/validationlabel/validationlabel06.png)
@@ -89,7 +89,7 @@ ValidationLabel.errorbgcolor(number)
 Defines the foreground color when validation is unsuccessful.
 
 ```Lua
-ValidationLabel.errorfgcolor(number)
+ValidationLabel.errorfgcolor (number)
 ```
 
 ![validationlabel](/docs/validationlabel/validationlabel06.png)
@@ -99,7 +99,7 @@ ValidationLabel.errorfgcolor(number)
 Gets a value indicating whether validation succeeded.
 
 ```Lua
-ValidationLabel.isvalid(boolean)
+ValidationLabel.isvalid (boolean)
 ```
 
 ## Property - COUNT
@@ -107,7 +107,7 @@ ValidationLabel.isvalid(boolean)
 Gets the amount of errors.
 
 ```Lua
-ValidationLabel.count(number)
+ValidationLabel.count (number)
 ```
 
 ## Property - MESSAGE
@@ -115,7 +115,7 @@ ValidationLabel.count(number)
 Gets the error message.
 
 ```Lua
-ValidationLabel.message(string)
+ValidationLabel.message (string)
 ```
 
 ## Method - ADD
