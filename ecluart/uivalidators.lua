@@ -8,7 +8,8 @@ uivalidators.SEPARATOR = {
   none = "",
   space = " ",
   semicolon = "; ",
-  comma = ", "
+  comma = ", ",
+  newline = "\n",
 }
 
 uivalidators.FLAG = {
@@ -34,7 +35,7 @@ function BaseValidator:constructor(parent, widget, caption, x, y, width, height)
   self.showallerrors = true
   self.separator = uivalidators.SEPARATOR.space
   self.textalign = "left"
-
+  
   self:autosize()
 end
 
@@ -69,7 +70,7 @@ function BaseValidator:validate()
     end
 
     if is(self.widget, ui.Combobox) or is(self.widget, ui.List) or is(self.widget, ui.Tree) then
-      result = self.widget.selected and widget.rule(self.widget.selected.text) or w.rule("")
+      result = self.widget.selected and widget.rule(self.widget.selected.text) or widget.rule("")
     end
 
     if not result then
@@ -123,6 +124,8 @@ function ValidationLabel:validate()
     self.fgcolor = self.savefgcolor
   end
 
+  self:autosize()
+
   return self.isvalid
 end
 
@@ -163,6 +166,8 @@ function ValidationText:validate()
     self.bgcolor = self.savebgcolor
     self.fgcolor = self.savefgcolor
   end
+
+  self:autosize()
 
   return self.isvalid
 end
@@ -207,6 +212,8 @@ function ValidationIndicator:validate()
     self.bgcolor = self.savebgcolor
     self.fgcolor = self.savefgcolor
   end
+
+  self:autosize()
 
   return self.isvalid
 end
