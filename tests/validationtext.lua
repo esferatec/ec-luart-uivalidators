@@ -9,10 +9,11 @@ local function isnumber(value)
   return math.type(math.tointeger(value)) == "integer"
 end
 
-local win = ui.Window("ValidationLabel", "fixed", 300, 250)
+local win = ui.Window("ValidationText", "fixed", 300, 250)
 
+local lblAge = ui.Label(win, "Age:", 10, 29)
 local etyAge = ui.Entry(win, "", 100, 24, 40)
-local valAge = uiva.ValidationLabel(win, etyAge, "Age:", 10, 29)
+local valAge = uiva.ValidationText(win, etyAge, 10, 54)
 local btnValidate = ui.Button(win, "Validate", 10, 100, 280)
 
 valAge:add(isrequired, "Age is required.")
@@ -20,7 +21,6 @@ valAge:add(isnumber, "Age must be a number.")
 
 local cbxShowAll = ui.Checkbox(win, "show all errors", 10, 140)
 local cbxSeparator = ui.Checkbox(win, "' / ' as separator", 160, 165)
-local cbxFlag = ui.Checkbox(win, "'(ERROR)' as flag", 10, 165)
 local cbxBGColor= ui.Checkbox(win, "'0x4060A0' as bg color", 10, 190)
 local cbxFGColor= ui.Checkbox(win, "'0xF0A030' as fg color", 160, 190)
 
@@ -36,13 +36,7 @@ function btnValidate:onClick()
   if cbxSeparator.checked then
     valAge.separator = " / "
   else
-    valAge.separator = uiva.SEPARATOR.space
-  end
-
-  if cbxFlag.checked then
-    valAge.flag = "(ERROR)"
-  else
-    valAge.flag = uiva.FLAG.exclamationmark
+    valAge.separator = uiva.SEPARATOR.newline
   end
 
   if cbxBGColor.checked then
