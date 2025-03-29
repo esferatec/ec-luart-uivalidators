@@ -3,9 +3,7 @@
 This project provides input validation ui objects for [LuaRT](https://www.luart.org/).
 It has been designed to simplify and improve the creation of graphical user interfaces with the LuaRT ui module.
 
-![example](/readme.png)
-
-[![LuaRT 1.9.0](https://badgen.net/badge/LuaRT/1.9.0/blue)](https://github.com/samyeyo/LuaRT)
+[![LuaRT 1.9.5](https://badgen.net/badge/LuaRT/1.9.5/blue)](https://github.com/samyeyo/LuaRT)
 
 ## Features
 
